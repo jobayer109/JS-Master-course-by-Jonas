@@ -18,7 +18,9 @@ checkBtn.addEventListener("click", function () {
   } else if (guess === secretNum) {
     document.querySelector(".message").textContent = `✌️  Correct number ! `;
     document.querySelector("body").style.backgroundColor = "#60b347";
-    document.querySelector(".number").style.width = "30rem";
+    document.querySelector(".number").style.borderRadius = "50%";
+    document.querySelector(".number").style.backgroundColor = "black";
+    document.querySelector(".number").style.color = "white";
 
     // Too high guessing
   } else if (guess > secretNum) {
@@ -40,3 +42,5 @@ checkBtn.addEventListener("click", function () {
     document.querySelector(".score").textContent = score;
   }
 });
+
+// Again Button handle
